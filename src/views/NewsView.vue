@@ -1,9 +1,12 @@
 <template>
-    <h1>newss</h1>
+    <user-view></user-view>
 </template>
 
 <script>
-    export default {};
+    import UserView from "./UserView.vue";
+    export default {
+        components: { UserView },
+    };
 </script>
 
 <style></style>

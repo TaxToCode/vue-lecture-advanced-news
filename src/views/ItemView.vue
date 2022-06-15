@@ -1,5 +1,5 @@
 <template>
-    <h1>itemView</h1>
+    <div>item</div>
 </template>
 
 <script>
