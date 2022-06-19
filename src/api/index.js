@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// 1. HTTP Request & Response와 관련된 기본 설정
 const api = {
     baseUrl: "https://api.hnpwa.com/v0/",
     news: "https://api.hnpwa.com/v0/news/1.json",
@@ -7,11 +8,13 @@ const api = {
     jobs: "https://api.hnpwa.com/v0/jobs/1.json",
 };
 
+// 2. API 함수들을 정리
 function fetchNewsList() {
     return axios.get(api.news);
 }
 
 function fetchAskList() {
+    // return axios.get(`${api.baseUrl}ask/1.json`)
     return axios.get(api.ask);
 }
 
